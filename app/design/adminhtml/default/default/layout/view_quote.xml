@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<layout>
+    <viewquote_adminhtml_quote_grid>
+        <update handle="formkey"/>
+        <block type="viewQuote/adminhtml_sales_quote_grid" name="viewquote_sales_quote.grid" output="toHtml"></block>
+    </viewquote_adminhtml_quote_grid>
+
+    <viewquote_adminhtml_quote_index>
+        <reference name="content">
+            <block type="viewQuote/adminhtml_sales_quote" name="viewquote_sales_quote.grid.container">
+
+            </block>
+        </reference>
+    </viewquote_adminhtml_quote_index>
+
+    <viewquote_adminhtml_quote_view>
+        <reference name="head">
+            <!--<action method="addJs"><file>mage/adminhtml/giftmessage.js</file></action>-->
+            <!--<action method="addJs"><file>mage/adminhtml/giftoptions/tooltip.js</file></action>-->
+        </reference>
+        <reference name="content">
+            <block type="viewQuote/adminhtml_sales_quote_view" name="sales_quote_edit" template="view_quote/sales/quote/view.phtml"></block>
+        </reference>
+        <reference name="left">
+            <block type="viewQuote/adminhtml_sales_quote_view_tabs" name="sales_quote_edit_tabs"></block>
+        </reference>
+    </viewquote_adminhtml_quote_view>
+
+</layout>

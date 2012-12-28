@@ -1,0 +1,4 @@
+app/code/local/Snowcommerce/ViewQuote app/code/local/Snowcommerce/ViewQuote
+app/etc/modules/Snowcommerce_ViewQuote.xml app/etc/modules/Snowcommerce_ViewQuote.xml
+app/design/adminhtml/default/default/layout/view_quote.xml app/design/adminhtml/default/default/layout/view_quote.xml
+app/design/adminhtml/default/default/template/view_quote app/design/adminhtml/default/default/template/view_quote

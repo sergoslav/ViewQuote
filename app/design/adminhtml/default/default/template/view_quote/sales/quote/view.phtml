@@ -1,0 +1,15 @@
+<?php
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+?>
+<div class="content-header">
+    <h3 class="icon-head head-products"><?php echo $this->getHeaderText() ?></h3>
+    <div style="float: right;"><?php echo $this->getButtonsHtml() ?></div>
+</div>
+<form action="<?php echo $this->getSaveUrl() ?>" method="post" id="sale_quote_view_form" enctype="multipart/form-data">
+    <?php echo $this->getBlockHtml('formkey')?>
+    <div style="display:none"></div>
+</form>

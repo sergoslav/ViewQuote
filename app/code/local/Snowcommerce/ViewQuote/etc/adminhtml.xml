@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <sales>
+            <children>
+                <view_quote translate="title" module="viewQuote">
+                    <title>Orders not completed</title>
+                    <sort_order>20</sort_order>
+                    <action>viewquote/adminhtml_quote/index</action>
+                </view_quote>
+            </children>
+        </sales>
+    </menu>
+</config>
