@@ -162,12 +162,11 @@ class Snowcommerce_ViewQuote_Block_Adminhtml_Sales_Quote_Grid extends Mage_Admin
         $this->getMassactionBlock()->setFormFieldName('order_ids');
         $this->getMassactionBlock()->setUseSelectAll(false);
 
-        if (Mage::getSingleton('admin/session')->isAllowed('sales/order/actions/cancel')) {
-            $this->getMassactionBlock()->addItem('cancel_order', array(
-                 'label'=> Mage::helper('sales')->__('Cancel'),
-                 'url'  => $this->getUrl('*/sales_order/massCancel'),
-            ));
-        }
+        $this->getMassactionBlock()->addItem('cancel_order', array(
+             'label'=> Mage::helper('sales')->__('Nothing'),
+//                 'url'  => $this->getUrl('*/sales_order/massCancel'),
+             'url'  => '',
+        ));
 
 //        if (Mage::getSingleton('admin/session')->isAllowed('sales/order/actions/hold')) {
 //            $this->getMassactionBlock()->addItem('hold_order', array(
