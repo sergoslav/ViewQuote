@@ -192,6 +192,7 @@ class Snowcommerce_ViewQuote_Model_Resource_Sales_Quote_Collection extends Mage_
             ->addFilterToMap('shipping_lastname', $shippingAliasName . '.lastname')
             ->addFilterToMap('shipping_telephone', $shippingAliasName . '.telephone')
             ->addFilterToMap('shipping_email', $shippingAliasName . '.email')
+            ->addFilterToMap('created_at', 'main_table.created_at')
         ;
 
         $this
