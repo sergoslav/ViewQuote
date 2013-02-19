@@ -31,7 +31,7 @@
  * @package    Mage_Adminhtml
  * @author      Magento Core Team <core@magentocommerce.com>
  */
-class Snowcommerce_ViewQuote_Block_Adminhtml_Sales_Quote_Grid extends Mage_Adminhtml_Block_Widget_Grid
+class Snowcommerce_ViewQuote_Block_Adminhtml_Sales_Quote_GridExport extends Mage_Adminhtml_Block_Widget_Grid
 {
 
     public function __construct()
@@ -121,7 +121,7 @@ class Snowcommerce_ViewQuote_Block_Adminhtml_Sales_Quote_Grid extends Mage_Admin
 
         $this->addColumn('address', array(
             'header' => Mage::helper('sales')->__('Address'),
-            'renderer' => new Snowcommerce_ViewQuote_Block_Adminhtml_Sales_Quote_Renderer_AddressGrid()
+            'renderer' => new Snowcommerce_ViewQuote_Block_Adminhtml_Sales_Quote_Renderer_Address()
         ));
 
 //        $this->addColumn('status', array(

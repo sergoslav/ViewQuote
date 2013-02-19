@@ -88,8 +88,8 @@ class Snowcommerce_ViewQuote_Adminhtml_QuoteController extends Mage_Adminhtml_Co
     public function exportCsvAction()
     {
         #TODO: Do it!
-        $fileName   = 'orders.csv';
-        $grid       = $this->getLayout()->createBlock('adminhtml/sales_order_grid');
+        $fileName   = 'ordersNotCompleted.csv';
+        $grid       = $this->getLayout()->createBlock('viewQuote/adminhtml_sales_quote_gridExport');
         $this->_prepareDownloadResponse($fileName, $grid->getCsvFile());
     }
 
@@ -99,8 +99,8 @@ class Snowcommerce_ViewQuote_Adminhtml_QuoteController extends Mage_Adminhtml_Co
     public function exportExcelAction()
     {
         #TODO: Do it!
-        $fileName   = 'orders.xml';
-        $grid       = $this->getLayout()->createBlock('adminhtml/sales_order_grid');
+        $fileName   = 'ordersNotCompleted.xml';
+        $grid       = $this->getLayout()->createBlock('viewQuote/adminhtml_sales_quote_gridExport');
         $this->_prepareDownloadResponse($fileName, $grid->getExcelFile($fileName));
     }
 
